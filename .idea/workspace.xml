@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f41894b2-9e51-444d-9a67-f3261544dcdb" name="Default Changelist" comment="" />
+    <list default="true" id="f41894b2-9e51-444d-9a67-f3261544dcdb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Nav.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,21 +30,30 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Ztpf1yXnZMdCtQHmJGo90J7lP2" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/MyPosts/Post" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\react\01-first-project\myreact\src\components\Profile\MyPosts\Post" />
+      <recent name="D:\projects\react\01-first-project\myreact\src\components\Profile\MyPosts" />
+      <recent name="D:\projects\react\01-first-project\first\src\components" />
       <recent name="D:\projects\react\01-first-project\first\src\css" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\react\01-first-project\first\src\components" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\react\01-first-project\myreact\src\components\Profile" />
+      <recent name="D:\projects\react\01-first-project\myreact\src\components\Navbar" />
+      <recent name="D:\projects\react\01-first-project\myreact\src\components\Header" />
       <recent name="D:\projects\react\01-first-project\first\src\css" />
     </key>
   </component>
@@ -62,10 +81,25 @@
       <updated>1585668353628</updated>
       <workItem from="1585668375106" duration="11767000" />
       <workItem from="1585835167924" duration="4960000" />
+      <workItem from="1585902011077" duration="632000" />
+      <workItem from="1585902695531" duration="8015000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
