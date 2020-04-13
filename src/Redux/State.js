@@ -1,3 +1,12 @@
+import profileReducer from "./profileReducer";
+import dialogsReducer from "./dialogsReducer";
+import sidebarReducer from "./sidebarReducer";
+
+// const ADD_POST = 'ADD-POST';
+// const CHANGE_POST = 'CHANGE-POST';
+// const ADD_MESSAGE = 'ADD-MESSAGE';
+// const UPDATE_MESSAGE = 'UPDATE-MESSAGE';
+
 // let stateRerender = () => {}
 //
 // let state = {
@@ -75,9 +84,7 @@
 // export default state;
 
 export let store = {
-    _stateRerender() {
-        // console.log('no subscribers (observers)')
-    },
+
     _state: {
         ProfilePage: {
             Posts: [
@@ -106,7 +113,7 @@ export let store = {
             ],
             NewMessageText: 'state Message'
         },
-        Friends: {
+        Sidebar: {
             FriendData: [
                 {name: "Sasha", imgUrl: "https://wpjournalist.nl/wp-content/uploads/2019/03/avatar-jongen-voorbeeld-1.jpg"},
                 {name: "Andrey", imgUrl: "https://i.pinimg.com/originals/ed/09/16/ed0916a8c0d1d29b4fb90d02af33bc09.png"},
@@ -114,33 +121,8 @@ export let store = {
             ]
         }
     },
-    addPost() {
-        let newPost = {
-            id: '5',
-            message: this._state.ProfilePage.NewPostText,
-            like: '0'
-        };
-        this._state.ProfilePage.Posts.push(newPost);
-        this._state.ProfilePage.NewPostText = '';
-        this._stateRerender(this._state);
-    },
-    changePost(postMessage) {
-        this._state.ProfilePage.NewPostText = postMessage;
-        this._stateRerender(this._state)
-    },
-    addMessage() {
-        let newMessage = {
-            id: '5',
-            message: this._state.DialogsPage.NewMessageText
-        };
-        this._state.DialogsPage.Messages.push(newMessage);
-        this._state.DialogsPage.NewMessageText = '';
-        this._stateRerender(this._state);
-    },
-    updateMessage(postMessage) {
-        this._state.DialogsPage.NewMessageText = postMessage;
-        this._stateRerender(this._state)
-    },
+    _stateRerender() {},
+
     subscribe(observer) {
         this._stateRerender = observer;
     },
@@ -149,5 +131,17 @@ export let store = {
     },
     getState() {
         return this._state;
+    },
+
+    dispatch(action){
+        // debugger
+        this._state.ProfilePage = profileReducer(this._state.ProfilePage, action);
+        this._state.DialogsPage = dialogsReducer(this._state.DialogsPage, action);
+        this._state.Sidebar = sidebarReducer(this._state.Sidebar, action);
+
+        this._stateRerender(this._state);
     }
 }
+
+
+

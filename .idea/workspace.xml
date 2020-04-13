@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f41894b2-9e51-444d-9a67-f3261544dcdb" name="Default Changelist" comment="lesson16">
-      <change afterPath="$PROJECT_DIR$/src/render.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/dialogsReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/profileReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/sidebarReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/State.js" afterDir="false" />
@@ -36,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -44,18 +46,18 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\react\01-first-project\myreact\src\Redux" />
+      <recent name="D:\projects\react\01-first-project\myreact\src" />
+      <recent name="D:\projects\react\01-first-project\myreact\src\components\Navbar\Friends\Friend" />
+      <recent name="D:\projects\react\01-first-project\myreact\src\components\Navbar\Friends" />
+      <recent name="D:\projects\react\01-first-project\myreact\src\components\Dialogs\Message" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\react\01-first-project\myreact\src\components\Profile" />
       <recent name="D:\projects\react\01-first-project\myreact\src\components\Navbar" />
       <recent name="D:\projects\react\01-first-project\myreact\src\components\Header" />
       <recent name="D:\projects\react\01-first-project\first\src\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\react\01-first-project\myreact\src" />
-      <recent name="D:\projects\react\01-first-project\myreact\src\components\Navbar\Friends\Friend" />
-      <recent name="D:\projects\react\01-first-project\myreact\src\components\Navbar\Friends" />
-      <recent name="D:\projects\react\01-first-project\myreact\src\components\Dialogs\Message" />
-      <recent name="D:\projects\react\01-first-project\myreact\src\components\Dialogs\DialogItem" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -85,7 +87,9 @@
       <workItem from="1585902011077" duration="632000" />
       <workItem from="1585902695531" duration="41697000" />
       <workItem from="1586152350344" duration="31863000" />
-      <workItem from="1586514558954" duration="6952000" />
+      <workItem from="1586514558954" duration="10679000" />
+      <workItem from="1586597786894" duration="590000" />
+      <workItem from="1586682714167" duration="14097000" />
     </task>
     <servers />
   </component>

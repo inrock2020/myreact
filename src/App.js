@@ -8,7 +8,6 @@ import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import {BrowserRouter, Route} from "react-router-dom";
-import {addPost} from "./Redux/State";
 
 const App = (props) => {
     // debugger
@@ -16,17 +15,17 @@ const App = (props) => {
         <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
-                <Nav state = {props.state.Friends}/>
+                <Nav state = {props.state.Sidebar}/>
                 <div className="app-wrapper-content">
                     <Route path='/profile' render={ () => <Profile
-                                                                   store = {props.store}
+                                                                    dispatch = {props.dispatch}
                                                                    state = {props.state.ProfilePage}
                                                                    // addPost = {props.addPost}
                                                                    // changePost = {props.changePost}
                                                                    />}
                     />
                     <Route path='/dialogs' render={ () => <Dialogs state = {props.state.DialogsPage}
-                                                                   store = {props.store}/>}/>
+                                                                   dispatch = {props.dispatch}/>}/>
                                                                    {/*updateMessage = {props.updateMessage}*/}
                                                                    {/*addMessage = {props.addMessage} /> }/>*/}
                     <Route path='/music' render={ () => <Music />}/>

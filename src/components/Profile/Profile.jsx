@@ -13,7 +13,7 @@ const Profile = (props) => {
                      newPostText = {props.state.NewPostText}
                      // addPost = {props.addPost}
                      // changePost = {props.changePost}
-                     store = {props.store}/>
+                     dispatch = {props.dispatch}/>
         </div>
     )
 }

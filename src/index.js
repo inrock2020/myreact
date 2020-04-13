@@ -4,17 +4,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {addMessage, addPost, changePost, updateMessage} from "./Redux/State";
 import {store} from "./Redux/State";
 
 
 let rerenderEntireTree = (state) => {
+    // debugger
     ReactDOM.render(
         <React.StrictMode>
             <App
 
                 // state = {state}
-                 store = {store}
+                 dispatch = {store.dispatch.bind(store)}
                  state = {store.getState()}/>
                  {/*addPost = {addPost}*/}
                  {/*changePost = {changePost}*/}
