@@ -83,7 +83,7 @@ import sidebarReducer from "./sidebarReducer";
 //
 // export default state;
 
-export let store = {
+let store = {
 
     _state: {
         ProfilePage: {
@@ -144,4 +144,4 @@ export let store = {
 }
 
 
-
+export default store

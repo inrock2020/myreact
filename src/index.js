@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {store} from "./Redux/State";
+import store from "./Redux/redux-store";
+// import store from "./Redux/store";
 
 
 let rerenderEntireTree = (state) => {
@@ -12,8 +13,7 @@ let rerenderEntireTree = (state) => {
     ReactDOM.render(
         <React.StrictMode>
             <App
-
-                // state = {state}
+                 store = {store}
                  dispatch = {store.dispatch.bind(store)}
                  state = {store.getState()}/>
                  {/*addPost = {addPost}*/}

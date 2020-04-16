@@ -6,6 +6,7 @@ import DialogItem from "./DialogItem/DialogItem";
 import {changeMessageActionCreator, newMessageActionCreator} from "../../Redux/dialogsReducer";
 
 const Dialogs = (props) => {
+    // debugger
     let Dialog = props.state.Dialogs.map( el => <DialogItem name = {el.name} id={el.id} imgUrl={el.imgUrl}/> )
 
     let Messages = props.state.Messages.map( el => <Message message = {el.message}/>)
@@ -16,11 +17,13 @@ const Dialogs = (props) => {
 
 
     let newMessage = () => {
-        props.dispatch(newMessageActionCreator())
+        props.addMessage()
+        // props.dispatch(newMessageActionCreator())
     }
     let changeMessage = (e) => {
         let text = e.target.value;
-        props.dispatch(changeMessageActionCreator(text));
+        props.changeMessage(text);
+        // props.dispatch(changeMessageActionCreator(text));
     }
     // let changeMessage = () => {
     //     let text = addNewMessage.current.value;
