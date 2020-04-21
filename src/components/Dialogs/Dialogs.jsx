@@ -7,9 +7,9 @@ import {changeMessageActionCreator, newMessageActionCreator} from "../../Redux/d
 
 const Dialogs = (props) => {
     // debugger
-    let Dialog = props.state.Dialogs.map( el => <DialogItem name = {el.name} id={el.id} imgUrl={el.imgUrl}/> )
+    let Dialog = props.dialogsPage.Dialogs.map( el => <DialogItem name = {el.name} id={el.id} imgUrl={el.imgUrl}/> )
 
-    let Messages = props.state.Messages.map( el => <Message message = {el.message}/>)
+    let Messages = props.dialogsPage.Messages.map( el => <Message message = {el.message}/>)
     // let addNewMessage = React.createRef();
 
     // debugger
@@ -38,7 +38,7 @@ const Dialogs = (props) => {
             </div>
             <div className={s.messages}>
                 {Messages}
-                <div><textarea onChange={changeMessage} value={props.state.NewMessageText}></textarea></div>
+                <div><textarea onChange={changeMessage} value={props.dialogsPage.NewMessageText}></textarea></div>
                 <div><button onClick={newMessage}>Add Message</button></div>
             </div>
         </div>

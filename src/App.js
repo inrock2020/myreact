@@ -9,17 +9,17 @@ import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import {BrowserRouter, Route} from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import NavContainer from "./components/Navbar/NavContainer";
 
-const App = (props) => {
+const App = () => {
     // debugger
     return (
-        <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
-                <Nav state = {props.state.Sidebar}/>
+                <NavContainer />
                 <div className="app-wrapper-content">
                     <Route path='/profile' render={ () => <Profile
-                                                                   store = {props.store}
+                                                                   // store = {props.store}
                                                                    // dispatch = {props.dispatch}
                                                                    // state = {props.state.ProfilePage}
                                                                    // state = {props.store.getState().ProfilePage}
@@ -28,7 +28,7 @@ const App = (props) => {
                                                                    />}
                     />
                     <Route path='/dialogs' render={ () => <DialogsContainer
-                                                                    store = {props.store}
+                                                                    // store = {props.store}
                                                                     // state = {props.state.DialogsPage}
                                                                     //dispatch = {props.dispatch}
                                                                     />}
@@ -40,7 +40,6 @@ const App = (props) => {
                     <Route path='/settings' render={ () => <Settings />}/>
                 </div>
             </div>
-        </BrowserRouter>
     );
 }
 
